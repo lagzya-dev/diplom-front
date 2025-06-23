@@ -2,7 +2,7 @@ import axios from 'axios'
 import Cookies from 'js-cookie'
 
 export const api = axios.create({
-    baseURL: import.meta.env.VITE_API_BASE_URL || 'http://localhost:3001',
+    baseURL: import.meta.env.VITE_API_BASE_URL || 'https://api-diplom.lagzya.top',
 })
 
 // Интсептор на случай, если вы храните JWT в обычных куках:
