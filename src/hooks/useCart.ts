@@ -14,7 +14,7 @@ export const useCart = () => {
                 setLoading(false)
             },
             error: (e) => {
-                setError('Ошибка загрузки корзины')
+                setError(`Ошибка загрузки корзины: ${e.message}`)
                 setLoading(false)
             },
         })

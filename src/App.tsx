@@ -5,9 +5,10 @@ import { ProductsPage } from './pages/ProductsPage'
 import {Header} from "./components/Header.tsx";
 import {CartPage} from "./pages/CartPage.tsx";
 import {OrdersPage} from "./pages/OrdersPage.tsx";
+import * as React from "react";
 
 // Простая проверка авторизации по наличию токена
-const RequireAuth = ({ children }: { children: JSX.Element }) => {
+const RequireAuth = ({ children }: { children: React.JSX.Element}) => {
     const token = document.cookie.match(/access_token=([^;]+)/)?.[1]
     return token ? children : <Navigate to="/login" />
 }

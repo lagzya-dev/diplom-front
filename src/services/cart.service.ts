@@ -60,4 +60,4 @@ class CartService {
     }
 }
 const cartService = new CartService()
-export {cartService, TCart, TCartItem}
+export {cartService, type TCart, type TCartItem}
